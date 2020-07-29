@@ -16,3 +16,16 @@ keywords = ["keylogger", "keyboard", "mouse"]
 chrono = "0.4.13"
 clap = "2.33.0"
 device_query = "0.2.4"
+
+[package.metadata.deb]
+maintainer = "DEADBLACKCLOVER <deadblackclover@protonmail.com>"
+copyright = "2020, DEADBLACKCLOVER <deadblackclover@protonmail.com>"
+license-file = ["LICENSE", "0"]
+extended-description = "Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes"
+depends = "$auto"
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/keylogger", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/keylogger/README", "644"],
+]
