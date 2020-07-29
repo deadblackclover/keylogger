@@ -1,0 +1,16 @@
+[package]
+name = "keylogger"
+version = "0.1.0"
+authors = ["DEADBLACKCLOVER <deadblackclover@protonmail.com>"]
+description = "Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes"
+edition = "2018"
+license = "GPL-3.0"
+readme = "README.md"
+homepage = "https://github.com/deadblackclover/keylogger"
+repository = "https://github.com/deadblackclover/keylogger"
+keywords = ["keylogger", "keyboard", "mouse"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+device_query = "0.2.4"
