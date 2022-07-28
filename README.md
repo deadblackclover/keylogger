@@ -1,7 +1,6 @@
 # keylogger
 
 ![crates.io](https://img.shields.io/crates/v/keylogger.svg)
-![docs.rs](https://docs.rs/keylogger/badge.svg)
 
 Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes
 
@@ -12,7 +11,7 @@ If you have Rust: `cargo install keylogger`
 ## Usage
 
 ```bash
-keylogger 0.1.0
+keylogger 0.1.1
 DEADBLACKCLOVER <deadblackclover@protonmail.com>
 Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes
 
