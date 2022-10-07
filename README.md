@@ -11,7 +11,7 @@ If you have Rust: `cargo install keylogger`
 ## Usage
 
 ```bash
-keylogger 0.1.1
+keylogger 0.1.2
 DEADBLACKCLOVER <deadblackclover@protonmail.com>
 Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes
 

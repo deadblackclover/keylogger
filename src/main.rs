@@ -7,7 +7,7 @@
 //! ## Usage
 //!
 //! ```bash
-//! keylogger 0.1.1
+//! keylogger 0.1.2
 //! DEADBLACKCLOVER <deadblackclover@protonmail.com>
 //! Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes
 //!
@@ -27,7 +27,7 @@ mod keylogger;
 
 fn main() {
     let matches = App::new("keylogger")
-        .version("0.1.1")
+        .version("0.1.2")
         .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
         .about("Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes")
         .arg(
