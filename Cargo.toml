@@ -14,7 +14,7 @@ keywords = ["keylogger", "keyboard", "mouse"]
 
 [dependencies]
 chrono = "0.4.19"
-clap = "2.33.0"
+clap = "2.34.0"
 device_query = "0.2.4"
 
 [package.metadata.deb]
