@@ -8,9 +8,9 @@
 //!
 //! ```bash
 //! Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes
-//! 
+//!
 //! Usage: keylogger [PATH]
-//! 
+//!
 //! Arguments:
 //!   [PATH]  [default: .keylogger]
 //!
