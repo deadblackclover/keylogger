@@ -11,19 +11,16 @@ If you have Rust: `cargo install keylogger`
 ## Usage
 
 ```bash
-keylogger 0.1.3
-DEADBLACKCLOVER <deadblackclover@protonmail.com>
 Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes
 
-USAGE:
-    keylogger [PATH]
+Usage: keylogger [PATH]
 
-FLAGS:
-    -h, --help       Prints help information
-    -V, --version    Prints version information
+Arguments:
+  [PATH]  [default: .keylogger]
 
-ARGS:
-    <PATH>    File path
+Options:
+  -h, --help     Print help
+  -V, --version  Print version
 ```
 
 ## Build deb

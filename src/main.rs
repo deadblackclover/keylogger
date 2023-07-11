@@ -7,37 +7,29 @@
 //! ## Usage
 //!
 //! ```bash
-//! keylogger 0.1.3
-//! DEADBLACKCLOVER <deadblackclover@protonmail.com>
 //! Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes
+//! 
+//! Usage: keylogger [PATH]
+//! 
+//! Arguments:
+//!   [PATH]  [default: .keylogger]
 //!
-//! USAGE:
-//!     keylogger [PATH]
-//!
-//! FLAGS:
-//!     -h, --help       Prints help information
-//!     -V, --version    Prints version information
-//!
-//! ARGS:
-//!     <PATH>    File path
+//! Options:
+//!   -h, --help     Print help
+//!   -V, --version  Print version
 //! ```
-use clap::{App, Arg};
-
 mod keylogger;
 
+use clap::Parser;
+
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+struct Args {
+    #[arg(default_value_t = String::from(".keylogger"))]
+    path: String,
+}
+
 fn main() {
-    let matches = App::new("keylogger")
-        .version("0.1.3")
-        .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
-        .about("Register various user actions - keystrokes on the computer keyboard, movements and mouse keystrokes")
-        .arg(
-            Arg::with_name("PATH")
-                .help("File path")
-                .index(1),
-        )
-        .get_matches();
-
-    let path = matches.value_of("PATH").unwrap_or(".keylogger");
-
-    keylogger::run(String::from(path));
+    let args = Args::parse();
+    keylogger::run(args.path);
 }
